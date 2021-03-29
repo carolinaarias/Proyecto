@@ -1,0 +1,391 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&display=swap');
+
+body{
+
+   font-family:'Source Sans Pro', sans-serif;
+}
+ul, ol{
+   list-style-type: none;
+}
+
+.fixed{
+   position: fixed;
+}
+.flex-row{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+}
+.flex-column{
+   display: flex;
+   flex-direction: column;
+  
+}
+.absolute{
+   position: absolute;
+}
+/*-----HEADER-----*/
+
+header{
+   background-color: rgba(0, 0, 0, 0.945);
+   box-shadow: 2px 2px 2px 3px rgba(0, 0, 0, 0.2);
+   width: 100%;
+   height: 14vh;
+   z-index: 1;
+   justify-content: space-between;
+   align-items: center;
+}
+.navbar{
+  margin-right: 4rem;
+}
+
+.navbar__link {
+   font-weight: 600; 
+   color: white;
+   text-decoration: none;
+   font-size: 1rem;
+   margin: 1rem;
+}
+.navbar__link:hover{
+   color: rgb(84, 170, 84);
+   text-decoration: overline;
+}
+.logo{
+   padding: 0.6rem;
+   height: 6rem;
+   margin-left: 2rem; 
+}
+/*-----FOOTER-----*/
+
+footer{
+   height: 15vh;
+   background-color: #f1f1f1cb;
+   background: linear-gradient(to bottom, #fcfcfccb, #b3b3b3b2 );
+   padding: 2rem;
+   text-align: center;
+   justify-content: center;
+   align-items: center;
+}
+footer h3{
+   font-size: 1rem;
+   margin-top: 1rem;
+}
+footer ul {
+   width: 25%;
+   justify-content: space-evenly;
+   align-items: center;
+}
+.footer__img{
+   width: 2rem;
+   transition: all 2s;
+}
+.footer__img:hover{
+   transform: scale(1.5);
+}
+
+/*-----INICIO-----*/
+
+.description__text{
+   background-color: rgba(0, 0, 0, 0.582);
+   border-radius: 1rem;
+   color: white;
+   text-align: center;
+   padding: 1.5rem;
+   top: 10rem;
+   left: 4rem;
+}
+.animate__animated.animate__fadeInLeft {
+   --animate-duration: 4s;
+ }
+.description__text h3{
+   animation-duration: 2s;
+   animation-name: prueba;
+   animation-iteration-count: 1;
+}
+@keyframes prueba{
+   0% {
+      opacity: 0%;
+   }
+   50% {
+      opacity:50% ;
+   }
+   100%{
+      opacity: 100%;
+   }
+}
+.description__img{
+   width: 100%;
+}
+/*-----NOSOTROS-----*/
+
+.nosotros{
+   background-color:white ;
+}
+.staff{
+   margin: 0 4rem;
+}
+.staff__description{
+   width: 100%;
+   text-align: center;
+   justify-content: space-evenly;
+   align-items: center;
+   height: 100vh;
+}
+.staff__description-text{
+   color: white;
+   width: 40%;
+   height: 40vh;
+   background-color:rgba(56, 56, 56, 0.877);
+   padding: 1rem;
+   border-radius: 1rem;
+   justify-content: center;
+   
+}
+.staff__description-media{
+   justify-content: space-around;
+}
+.staff__description-media img{
+   width: 45%;
+}
+.staff__media{
+   height: 100vh;
+   justify-content: space-evenly;
+   align-items: center;
+}
+.staff__media div{
+   width: 40%;
+   height: 40vh;
+   color: white;
+   background-color:rgba(56, 56, 56, 0.877);
+   padding: 1rem;
+   border-radius: 1rem;
+   text-align: center;
+   justify-content: center;
+}
+.staff__media video{
+   width: 50%;
+   height: 500px;
+   margin: 2rem 2rem;
+}
+
+/*-----CERVEZAS-----*/
+.cervezas{
+   background-color:white ;
+}
+/*--product--*/
+.product{
+   padding-top: 100px;
+   margin-left: 2rem;
+   text-align: center;
+   height: 110vh;
+}
+.product h2{
+   margin-top: 1rem;
+   font-weight: 700;
+}
+.product__info{
+   margin-bottom: 2rem;
+   justify-content: space-evenly;
+   align-content: space-around;
+}
+.product__info div img{
+   width: 250px;
+   margin-top: 2rem;
+}
+.product__info-img2{
+   display: none;
+}
+/* Supongo que debe haber otra forma de hacer este efecto 
+para que quede mejor pero lo hice asi para aplicar lo visto*/
+.product__info-img1:hover{
+   display: none;
+}
+.product__info-img1:hover ~ .product__info-img2{
+   display: flex;
+}
+.product__info-table{
+   border: black solid 1px;
+   text-align: center;
+}
+/*--presentations--*/
+.presentations{
+   height: 30vh;
+   width: 100%;
+   margin-top: 4rem;
+   background-color:rgba(56, 56, 56, 0.877);
+   text-align: center;
+}
+.presentations h2{
+   color: white;
+   margin: 2rem 0;
+   padding-top: 1rem;
+}
+.presentations__icons{
+   justify-content: space-evenly;
+   align-items: center;
+}
+.presentations__icons img {
+   width: 100px;
+   
+}
+/*--alquiler choperas--*/
+.rental{
+   width: 100%;
+   height: 80vh;
+   padding: 1rem 4rem;
+   text-align: center;
+   justify-content: space-between;
+   align-items: center;
+}
+.rental__info{
+   width: 45%;
+}
+.rental__img {
+   width: 50%;
+}
+.rental__img img{
+   width: 400px;
+   border-radius: 80px
+}
+
+/*-----CARTA-----*/
+.menu{
+   background-color: white;
+}
+.carta{
+   padding-top: 100px;
+   margin-left: 2rem;
+}
+.carta h2{
+   margin-top: 1rem;
+   font-size: 1.7rem;
+   text-align: center;
+}
+.carta__products{
+   margin-top: 1rem;
+   width: 100%;
+}
+.carta__products li h3{
+   font-size: 1.5rem;
+}
+.carta__products-info{
+   justify-content: space-evenly;
+   align-items: center;
+   text-align: center;
+}
+.carta__products-info li{
+   margin: 2rem 0;
+   max-width: 22%;
+   padding: 2rem;
+   background-color: rgb(233, 232, 232);
+   border-radius: 1rem;
+   text-align: center;
+   overflow: hidden;
+}
+.carta__products-info li:hover{
+   box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.2);;
+}
+.carta__products-info li img{
+   width: 100%;
+   margin-bottom: 1rem;
+}
+.carta__products-info li h4{
+   margin-bottom: 1rem;
+   font-size: 1.2rem;
+}
+
+/*--delivery--*/
+.delivery{
+   margin-top: 2rem;
+   background-color: rgba(56, 56, 56, 0.945);
+   color: white;
+   text-align: center;
+}
+.delivery h3{
+   padding-top: 1rem;
+   font-size: 1.5rem;
+}
+.delivery__info{
+   justify-content: space-evenly;
+   align-items: center;
+   
+}
+.delivery__info li{
+   width: 25%;
+   text-align: center;
+   margin-top: 2rem;
+   margin-bottom: 1rem;
+}
+.delivery__info li img{
+   width: 5vw;
+   margin-top: 1rem;
+}
+
+/*-----ENCONTRANOS-----*/
+
+.encontranos{
+   height: 100vh;
+   display: grid;
+   grid-template-areas: "titulo     titulo"
+                        "maps       info"
+                        "maps       form";
+   gap: 1rem 2rem;
+   justify-items: center;
+   align-items: center;
+   padding-top: 115px;
+   margin-bottom: 2rem;
+
+}
+.titulo{
+   grid-area: titulo;
+   text-align: center;
+}
+.maps{
+   grid-area: maps;
+   width: 50%;
+}
+
+.info{
+   grid-area: info;
+   width: 50%;
+   background-color:#cfdac8;
+   text-align: center;
+   padding: 1rem;
+   border-radius: 2rem;
+
+}
+.form{
+   grid-area: form;
+   width: 50%;
+   text-align: center;
+}
+
+.form h3{
+  margin-bottom: 1rem;
+
+}
+.form form div{
+   margin-bottom: 1rem;
+   justify-content: center;
+
+ }
+ .form form div label{
+    margin-bottom: 0.4rem;
+ }
+ .form form div input,select{
+   width: 50%;
+   margin: 0 auto;
+ }
+.buttons{
+   width: 70%;
+   justify-content: center;
+   align-items: center;
+   margin: 0 auto;
+}
+
