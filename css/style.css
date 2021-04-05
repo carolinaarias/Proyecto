@@ -9,6 +9,7 @@
 body{
 
    font-family:'Source Sans Pro', sans-serif;
+   font-weight: 400;
 }
 ul, ol{
    list-style-type: none;
