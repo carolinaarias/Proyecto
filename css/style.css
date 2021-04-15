@@ -36,30 +36,26 @@ ul, ol{
 header{
    background-color: rgba(0, 0, 0, 0.945);
    box-shadow: 2px 2px 2px 3px rgba(0, 0, 0, 0.2);
-   width: 100%;
-   height: 14vh;
    z-index: 1;
    justify-content: space-between;
    align-items: center;
 }
-.navbar{
-  margin-right: 4rem;
+.active{
+   text-decoration: overline;
 }
-
-.navbar__link {
+.nav-link {
    font-weight: 600; 
    color: white;
    text-decoration: none;
    font-size: 1rem;
    margin: 1rem;
 }
-.navbar__link:hover{
+.nav-link:hover{
    color: rgb(84, 170, 84);
-   text-decoration: overline;
 }
-.logo{
+.navbar-brand img{
    padding: 0.6rem;
-   height: 6rem;
+   height: 5.5rem;
    margin-left: 2rem; 
 }
 /*-----FOOTER-----*/
@@ -138,8 +134,11 @@ footer ul {
       opacity: 100%;
    }
 }
-.description__img{
-   width: 100%;
+main{
+   height: 90vh;
+}
+.carousel-item img{
+   height:100vh;
 }
 /*-----NOSOTROS-----*/
 
