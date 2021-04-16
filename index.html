@@ -9,6 +9,8 @@
    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+   <div id="fb-root"></div>
+   <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v10.0" nonce="WkHTDnkU"></script>
    <header class="container-fluid fixed flex-row">
       <div>
          <a class="navbar-brand" href="index.html">
@@ -42,7 +44,7 @@
          </div>
        </nav>
    </header>
-   <main class="description">
+   <main>
       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
          <ol class="carousel-indicators">
            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -69,23 +71,64 @@
            <span class="sr-only">Next</span>
          </a>
        </div>
-      <div class="description__text absolute">
-         <h1 class="animate__animated animate__fadeInLeft">El Holandes Errante</h1>
-         <h3 class="animate__animated animate__fadeInLeft">Puerto Cervecero</h3>
-      </div>
    </main>
-
-   <footer class="flex-row">
-      <div class="footer_info">
+   <section class="reviews  flex-row">
+      <div class="container">
+         <h2 class="mt-5 ">Nuestras Reseñas</h2>
+            <div class="absolute reviews__fb">
+               <div class="flex-column">
+                  <div class="fb-post mb-3" data-href="https://www.facebook.com/juujulii/posts/10161020321820652" data-width="500" data-show-text="true"><blockquote cite="https://www.facebook.com/juujulii/posts/10161020321820652" class="fb-xfbml-parse-ignore"><p>NUEVO -menú de sanguches, pizzas y picadas variadas!!</p>Publicado por <a href="https://www.facebook.com/juujulii">Julia Astolfi</a> en&nbsp;<a href="https://www.facebook.com/juujulii/posts/10161020321820652">Miércoles, 17 de octubre de 2018</a></blockquote>
+                  </div>
+                  <div class="fb-post mb-3" data-href="https://www.facebook.com/azulia.beth/posts/1377333032411628" data-width="500" data-show-text="true"><blockquote cite="https://www.facebook.com/azulia.beth/posts/1377333032411628" class="fb-xfbml-parse-ignore"><p>Buenisimo un servicio de nivel .con todos los detalles de calidad  No es una tabla de picada mas.es PREMIUM ! La cerveza rubia y roja un EXITO TOTAL Super recomendable !!!! Exitos chicos !!!!</p>Publicado por <a href="#" role="button">Azulia Beth</a> en&nbsp;<a href="https://www.facebook.com/azulia.beth/posts/1377333032411628">Lunes, 15 de octubre de 2018</a></blockquote>
+                  </div>
+                  <div class="fb-post " data-href="https://www.facebook.com/rodrigo.cadaval/posts/3534942906538552" data-width="500" data-show-text="true"><blockquote cite="https://www.facebook.com/rodrigo.cadaval/posts/3534942906538552" class="fb-xfbml-parse-ignore"><p>Muy buena variedad de cervezas de grandes productores. Excelente atencion.</p>Publicado por <a href="https://www.facebook.com/rodrigo.cadaval">Rodrigo Cadaval</a> en&nbsp;<a href="https://www.facebook.com/rodrigo.cadaval/posts/3534942906538552">Miércoles, 24 de enero de 2018</a></blockquote>
+                  </div>
+               </div>
+            </div>
+      </div>
+   </section>
+   <section class="news">
+      <div class="container">
+         <h2 class="mb-5 ">Noticias</h2>
+         <div class="card-deck">
+            <div class="card">
+              <img src="http://placehold.it/300x300" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Titulo noticia</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni cum quis id pariatur ipsum. Cum eveniet eum quibusdam ea! Animi eum nam eveniet voluptate cupiditate perspiciatis ipsam dignissimos ullam ut.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="http://placehold.it/300x300" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Titulo noticia</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus vitae, unde recusandae mollitia ea sit.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="http://placehold.it/300x300" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Titulo noticia</h5>
+                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit error vero aut id. Unde impedit, placeat voluptatem repellat sint quod optio velit delectus, mollitia sapiente ducimus repudiandae suscipit voluptatibus obcaecati!</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+          </div>
+      </div>
+   </section>
+   <footer class="flex-row container-fluid">
+      <div class="footer_info col-3">
          <h4>Villa Urquiza</h4>
          <p class="footer_info-adress">Pedro Ignacio Rivera 4700</p>
          <P>Martes a Domingos 18.30 a 00 hs</P>
          <p>Viernes y Sabados hasta las 02 hs</p>
       </div>
-      <div class="footer_logo">
+      <div class="footer_logo col-3">
          <img src="img/logos/logo.png" alt="logo marca">
       </div>
-      <ul class="flex-row">
+      <ul class="flex-row col-3">
          <li> 
             <a target="blank" href="https://www.facebook.com/elpuertocervecero/">
                <img class="footer__img" src="multimedia/icons/facebook.svg" alt="icono facebook">
