@@ -68,7 +68,6 @@ header{
 /*-----FOOTER-----*/
 
 footer{
-   height: 15vh;
    background-color: #f1f1f1cb;
    background: linear-gradient(to bottom, #fcfcfccb, #b3b3b3b2 );
    justify-content: space-between;
@@ -93,15 +92,13 @@ footer{
 }
 .footer_logo{
    text-align: center;
-
 }
 .footer_logo img{
-   width: 20%;
+   width: 70px;
 }
 footer ul {
    justify-content: space-evenly;
    align-items: center;
-
 }
 .footer__img{
    width: 1.4rem;
@@ -110,7 +107,11 @@ footer ul {
 .footer__img:hover{
    transform: scale(1.3);
 }
-
+@media only screen and (max-width: 768px) {
+   footer div,ul {
+     margin-bottom: 2rem;
+   }
+ }
 /*-----INICIO-----*/
 main{
    height: 100vh;
@@ -118,6 +119,7 @@ main{
 .carousel-item img{
    height: 100vh;
 }
+/*--reviews--*/
 .reviews{
    height: 100vh;
 }
@@ -128,24 +130,19 @@ main{
    right: 10vw;
    margin-top: 10vh;
 }
-
+/*--news--*/
 .news{
    background-color: rgb(0, 0, 0);
    color: white;
-   height: 120vh;
 }
 .news .container{
    padding-top: 10rem;
 }
-.card-deck{
-   margin-bottom: 2rem;
-}
 .card{
    color: black;
-   height: 70vh;
+   overflow: hidden;
    margin-bottom: 2rem;
 }
-
 .card-body{
    height: 50%;
 }
@@ -234,8 +231,7 @@ main{
 .product__info-img2{
    display: none;
 }
-/* Supongo que debe haber otra forma de hacer este efecto 
-para que quede mejor pero lo hice asi para aplicar lo visto*/
+
 .product__info-img1:hover{
    display: none;
 }
