@@ -5,63 +5,84 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>El Holandes Errante</title>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body class="nosotros">
-   <header class="fixed flex-row">
-      <a href="../index.html">
-         <img src="../img/logos/Holandes Blanco1.png" alt="logo" class="logo">
-      </a>
-      <nav>
-         <ul class="navbar flex-row">
-            <li>
-               <a class="navbar__link" href="../index.html">INICIO</a>
-            </li>
-            <li>
-               <a class="navbar__link" href="nosotros.html">NOSOTROS</a>
-            </li>
-            <li>
-               <a class="navbar__link" href="cervezas.html">CERVEZAS</a>
-            </li>
-            <li>
-               <a class="navbar__link" href="carta.html">CARTA</a>
-            </li>
-            <li>
-               <a class="navbar__link" href="encontranos.html">ENCONTRANOS</a>
-            </li>
-         </ul>
-      </nav>
-   </header>
-   <section class="staff">
-      <div class="staff__description flex-row">
-         <div class="staff__description-text flex-column">
-            <h2>¿Quienes Somos?</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ex omnis qui beatae ipsa vel molestias laudantium </p>
-         </div>
-         <div class="staff__description-media flex-row">
-            <img src="../img/staff/YNWA0006.png" alt="imagen del staff">
-            <img src="../img/staff/YNWA0003.png" alt="imagen del staff"> 
-         </div>
+   <header class="container-fluid fixed flex-row">
+      <div>
+         <a class="navbar-brand" href="index.html">
+            <img src="../img/logos/Holandes Blanco1.png" alt="logo" class="logo">
+         </a>
       </div>
-      <div class="staff__media  flex-row">
-         <video controls src="../multimedia/video/video.mp4"></video>
-         <div class="flex-column">
-            <h3>Aca va un titulo</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore explicabo ipsum odio, culpa atque praesentium ethgcghc</p>
+      <nav class="navbar navbar-expand-lg ">
+         <div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <img class="navbar-toggler-icon" src="../multimedia/icons/menu.svg" alt="">
+            </button>
+         </div>
+         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+           <ul class="navbar-nav mr-auto">
+             <li class="nav-item ">
+               <a class="nav-link" href="../index.html">INICIO </span></a>
+             </li>
+             <li class="nav-item active">
+               <a class="nav-link" href="nosotros.html">NOSOTROS<span class="sr-only">(current)</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" href="cervezas.html">CERVEZAS</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" href="carta.html">CARTA</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" href="encontranos.html">ENCONTRANOS</a>
+             </li>
+           </ul>
+         </div>
+       </nav>
+   </header>
+   <section class="staff ">
+      <div class="staff__description pt-5 container-fluid ">
+         <div class="container flex-row">
+            <div class="staff__description-text col-6 flex-column">
+               <h2>¿QUIENES SOMOS?</h2>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ex omnis qui beatae ipsa vel molestias laudantium </p>
+            </div>
+            <div class="staff__description-media col-6 flex-row">
+               <img src="../img/staff/YNWA0006.png" alt="imagen del staff">
+               <img src="../img/staff/YNWA0003.png" alt="imagen del staff"> 
+            </div>
+         </div>
+      </div>  
+      <div class="staff__media container">
+         <div class="container flex-row">
+            <div class="col-9">
+               <video controls src="../multimedia/video/video.mp4"></video>
+            </div>
+            <div class="staff__media-text col-3 flex-column">
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
          </div>
       </div>
    </section>
-   <footer class="flex-row">
-      <div class="footer_info">
+   <section class="partners">
+      <div>
+         <h2>CON QUIENES TRABAJAMOS</h2>
+         <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim accusantium aliquam culpa doloremque ab solu</P>
+      </div>
+   </section>
+   <footer class="flex-row container-fluid p-2">
+      <div class="footer_info col-12 col-md-4">
          <h4>Villa Urquiza</h4>
          <p class="footer_info-adress">Pedro Ignacio Rivera 4700</p>
          <P>Martes a Domingos 18.30 a 00 hs</P>
          <p>Viernes y Sabados hasta las 02 hs</p>
       </div>
-      <div class="footer_logo">
+      <div class="footer_logo col-12 col-md-4">
          <img src="../img/logos/logo.png" alt="logo marca">
       </div>
-      <ul class="flex-row">
+      <ul class="flex-row col-12 col-md-4">
          <li> 
             <a target="blank" href="https://www.facebook.com/elpuertocervecero/">
                <img class="footer__img" src="../multimedia/icons/facebook.svg" alt="icono facebook">
@@ -79,5 +100,7 @@
          </li>
       </ul>
    </footer>
+   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

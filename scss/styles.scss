@@ -1,0 +1,466 @@
+:root{
+   font-size: 10px;
+}
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&display=swap');
+
+body{
+
+   font-family:'Source Sans Pro', sans-serif;
+   font-weight: 400;
+}
+ul, ol{
+   list-style-type: none;
+}
+
+.fixed{
+   position: fixed;
+}
+.flex-row{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+}
+.flex-column{
+   display: flex;
+   flex-direction: column;
+  
+}
+.absolute{
+   position: absolute;
+}
+/*-----HEADER-----*/
+
+header{
+   background-color: rgba(27, 27, 27, 0.945);
+   box-shadow: 2px 2px 2px 3px rgba(0, 0, 0, 0.2);
+   z-index: 2;
+   justify-content: space-between;
+   align-items: center;
+}
+.active{
+   text-decoration: overline;
+}
+.nav-link {
+   font-weight: 600; 
+   color: white;
+   text-decoration: none;
+   font-size: 1.5rem;
+   margin: 1.5rem;
+}
+.nav-link:hover{
+   color: rgb(112, 206, 112);
+}
+.navbar-brand img{
+   transition: all 0.5s;
+}
+.navbar-brand img:hover{
+   opacity: 60%;
+}
+.navbar-brand img{
+   padding: 1rem;
+   height: 12vh;
+   width: auto;
+   margin-left: 3rem; 
+}
+/*-----FOOTER-----*/
+
+footer{
+   background-color: rgba(27, 27, 27, 0.945);
+   justify-content: space-between;
+   align-items: center;
+}
+.footer_info{
+   color: white;
+   font-size: 1.5rem;
+   text-align: center;
+   font-weight: 400;
+   padding: 1rem;
+}
+
+.footer_info h4{
+   font-size: 1.6rem;
+   font-weight: 700;
+   margin-bottom: 0.2rem;
+}
+.footer_info p{
+   margin: 0;
+   font-size: 1.4rem; ;
+}
+.footer_info-adress{
+   font-size: 1.5rem;
+   font-weight:700 ;
+   margin-bottom: 0.8rem;
+}
+.footer_logo{
+   text-align: center;
+}
+.footer_logo img{
+   width: 70px;
+}
+footer ul {
+   justify-content: space-evenly;
+   align-items: center;
+}
+.footer__img{
+   width: 2.5rem;
+   opacity: 80%;
+   transition: all 1s;
+}
+.footer__img:hover{
+   transform: scale(1.3);
+   opacity: 100%;
+
+}
+@media only screen and (max-width: 768px) {
+   footer div,ul {
+     margin-bottom: 3.2rem;
+   }
+ }
+/*-----INICIO-----*/
+main{
+   height: 100vh;
+}
+.carousel-item img{
+   height: 100vh;
+}
+.carousel-control-next-icon {
+   background-image: url(/Proyecto/multimedia/icons/arrow-next.svg);
+}
+.carousel-control-prev-icon {
+   background-image: url(/Proyecto/multimedia/icons/arrow-prev.svg);
+}
+.carousel-control-next-icon, .carousel-control-prev-icon {
+   width: 25px;
+   height: 25px;
+}
+/*--reviews--*/
+.reviews{
+   height: 100vh;
+}
+.reviews div h2{
+   font-size: 3rem;
+   font-weight: 800;
+}
+.reviews__fb{
+   background-color: rgba(65, 65, 65, 0.452);
+   padding: 3.2rem;
+   border-radius: 2%;
+   right: 10vw;
+   margin-top: 10vh;
+}
+/*--news--*/
+.news{
+   background-color: rgb(0, 0, 0);
+   color: white;
+}
+.news .container{
+   padding-top: 10.6rem;
+}
+.news div h2{
+   font-size: 3rem;
+   font-weight: 800;
+}
+.card{
+   width: 10%;
+   color: black;
+   overflow: hidden;
+   border-radius: 1rem;
+}
+.card:hover{
+   box-shadow: 0 5px 5px 5px rgb(104, 104, 104);;
+}
+.card-body{
+   height: 50%;
+   font-family:'Source Sans Pro', sans-serif;
+}
+.card-img-top{
+   height: 50%;
+   padding: 1.6rem;
+   border-radius: 3rem;
+}
+.card-title{
+   font-size: 2.5rem;
+   font-weight: 600;
+}
+.card-text{
+   font-size: 1.4rem;
+}
+.text-muted{
+   font-size: 1.2rem;
+}
+
+/*-----NOSOTROS-----*/
+
+.nosotros{
+   background-color:white ;
+}
+
+.staff__description{
+   background-color: black;
+   height: 120vh;
+
+}
+.staff__description .container{
+   justify-content: space-between;
+   align-items: center;
+   margin-top: 15rem;
+}
+.staff__description-text{
+   color: white;
+   font-size: 2rem;
+   width: 40%;
+   height: 40vh;
+   justify-content: center;
+}
+.staff__description-text h2{
+   font-size: 3rem;
+   font-weight: 800;
+}
+.staff__description-media{
+   justify-content: space-around;
+}
+.staff__description-media img{
+   width: 45%;
+}
+.staff__media{
+   height: 100vh;
+}
+
+.staff__media video{
+   width: 100%; 
+   position: relative;
+   top: -7rem;
+   box-shadow: -4px -13px 22px -5px rgba(230, 230, 230, 0.7);
+
+}
+.staff__media-text{
+   padding-top: 2rem;
+   font-size: 2rem;
+}
+
+.partners{
+   height: 100vh;
+   background-image: url(../img/staff/madera\ fondo.jpg);
+}
+/*-----CERVEZAS-----*/
+.cervezas{
+   background-color:white ;
+}
+/*--product--*/
+.product{
+   padding-top: 100px;
+   margin-left: 3.2rem;
+   text-align: center;
+   height: 110vh;
+}
+.product h2{
+   margin-top: 1.6rem;
+   font-weight: 700;
+}
+.product__info{
+   margin-bottom: 3.2rem;
+   justify-content: space-evenly;
+   align-content: space-around;
+}
+.product__info div img{
+   width: 250px;
+   margin-top: 3.2rem;
+}
+.product__info-img2{
+   display: none;
+}
+
+.product__info-img1:hover{
+   display: none;
+}
+.product__info-img1:hover ~ .product__info-img2{
+   display: flex;
+}
+.product__info-table{
+   border: black solid 1px;
+   text-align: center;
+}
+/*--presentations--*/
+.presentations{
+   height: 30vh;
+   width: 100%;
+   margin-top: 6.4rem;
+   background-color:rgba(56, 56, 56, 0.877);
+   text-align: center;
+}
+.presentations h2{
+   color: white;
+   margin: 3.2rem 0;
+   padding-top: 1.6rem;
+}
+.presentations__icons{
+   justify-content: space-evenly;
+   align-items: center;
+}
+.presentations__icons img {
+   width: 100px;
+   
+}
+/*--alquiler choperas--*/
+.rental{
+   width: 100%;
+   height: 80vh;
+   padding: 1.6rem 6.4rem;
+   text-align: center;
+   justify-content: space-between;
+   align-items: center;
+}
+.rental__info{
+   width: 45%;
+}
+.rental__img {
+   width: 50%;
+}
+.rental__img img{
+   width: 400px;
+   border-radius: 80px
+}
+
+/*-----CARTA-----*/
+.menu{
+   background-color: white;
+}
+.carta{
+   padding-top: 100px;
+   margin-left: 3.2rem;
+}
+.carta h2{
+   margin-top: 1.6rem;
+   font-size: 2.7rem;
+   text-align: center;
+}
+.carta__products{
+   margin-top: 1.6rem;
+   width: 100%;
+}
+.carta__products li h3{
+   font-size: 2.4rem;
+}
+.carta__products-info{
+   justify-content: space-evenly;
+   align-items: center;
+   text-align: center;
+}
+.carta__products-info li{
+   margin: 3.2rem 0;
+   max-width: 22%;
+   padding: 3.2rem;
+   background-color: rgb(233, 232, 232);
+   border-radius: 1.6rem;
+   text-align: center;
+   overflow: hidden;
+}
+.carta__products-info li:hover{
+   box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.2);;
+}
+.carta__products-info li img{
+   width: 100%;
+   margin-bottom: 1.6rem;
+}
+.carta__products-info li h4{
+   margin-bottom: 1.6rem;
+   font-size: 1.9rem;
+}
+
+/*--delivery--*/
+.delivery{
+   margin-top: 3.2rem;
+   background-color: rgba(56, 56, 56, 0.945);
+   color: white;
+   text-align: center;
+}
+.delivery h3{
+   padding-top: 1.6rem;
+   font-size: 2.4rem;
+}
+.delivery__info{
+   justify-content: space-evenly;
+   align-items: center;
+   
+}
+.delivery__info li{
+   width: 25%;
+   text-align: center;
+   margin-top: 3.2rem;
+   margin-bottom: 1.6rem;
+}
+.delivery__info li img{
+   width: 5vw;
+   margin-top: 1.6rem;
+}
+
+/*-----ENCONTRANOS-----*/
+
+.encontranos{
+   height: 100vh;
+   display: grid;
+   grid-template-areas: "titulo     titulo"
+                        "maps       info"
+                        "maps       form";
+   gap: 1.6rem 3.2rem;
+   justify-items: center;
+   align-items: center;
+   padding-top: 115px;
+   margin-bottom: 3.2rem;
+
+}
+.titulo{
+   grid-area: titulo;
+   text-align: center;
+}
+.maps{
+   grid-area: maps;
+   width: 50%;
+}
+
+.info{
+   grid-area: info;
+   width: 50%;
+   background-color:#cfdac8;
+   text-align: center;
+   padding: 1.6rem;
+   border-radius: 3.2rem;
+
+}
+.form{
+   grid-area: form;
+   width: 50%;
+   text-align: center;
+}
+
+.form h3{
+  margin-bottom: 1.6rem;
+
+}
+.form form div{
+   margin-bottom: 1.6rem;
+   justify-content: center;
+
+ }
+ .form form div label{
+    margin-bottom: 0.6rem;
+ }
+ .form form div input,select{
+   width: 50%;
+   margin: 0 auto;
+ }
+.buttons{
+   width: 70%;
+   justify-content: center;
+   align-items: center;
+   margin: 0 auto;
+}
+
+
