@@ -1,0 +1,11 @@
+$titles-fs: (3rem);
+$titles-fw: (800);
+$arrows: (
+   next-icon: url(../multimedia/icons/arrow-next.svg),
+   prev-icon: url(../multimedia/icons/arrow-prev.svg),
+);
+
+@mixin titles {
+   font-size: $titles-fs;
+   font-weight: $titles-fw;
+}

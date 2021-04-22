@@ -1,0 +1,49 @@
+/*-----NOSOTROS-----*/
+
+.nosotros{
+   background-color:white ;
+}
+
+.staff__description{
+   background-color: black;
+   height: 120vh;
+
+}
+.staff__description .container{
+   justify-content: space-between;
+   align-items: center;
+   margin-top: 15rem;
+}
+.staff__description-text{
+   color: white;
+   font-size: 2rem;
+   width: 40%;
+   height: 40vh;
+   justify-content: center;
+}
+.staff__description-text h2{
+   font-size: 3rem;
+   font-weight: 800;
+}
+.staff__description-media{
+   justify-content: space-around;
+}
+.staff__description-media img{
+   width: 45%;
+}
+.staff__media{
+   height: 100vh;
+}
+
+.staff__media video{
+   width: 100%; 
+   position: relative;
+   top: -7rem;
+   box-shadow: -4px -13px 22px -5px rgba(230, 230, 230, 0.7);
+
+}
+.staff__media-text{
+   padding-top: 2rem;
+   font-size: 2rem;
+}
+

@@ -1,0 +1,71 @@
+/*-----INICIO-----*/
+main{
+   height: 100vh;
+}
+.carousel-item img{
+   height: 100vh;
+}
+
+@each $arrow, $image in $arrows {
+   .carousel-control-#{$arrow} {
+       background-image: $image;
+   }
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+   width: 25px;
+   height: 25px;
+}
+/*--reviews--*/
+.reviews{
+   height: 100vh;
+}
+.reviews div h2{
+  @include titles
+}
+.reviews__fb{
+   background-color: rgba(65, 65, 65, 0.452);
+   padding: 3.2rem;
+   border-radius: 2%;
+   right: 10vw;
+   margin-top: 10vh;
+}
+/*--news--*/
+.news{
+   background-color: rgb(0, 0, 0);
+   color: white;
+}
+.news .container{
+   padding-top: 10.6rem;
+}
+.news div h2{
+   @include titles
+}
+.card{
+   width: 10%;
+   color: black;
+   overflow: hidden;
+   border-radius: 1rem;
+}
+.card:hover{
+   box-shadow: 0 5px 5px 5px rgb(104, 104, 104);;
+}
+.card-body{
+   height: 50%;
+   font-family:'Source Sans Pro', sans-serif;
+}
+.card-img-top{
+   height: 50%;
+   padding: 1.6rem;
+   border-radius: 3rem;
+}
+.card-title{
+   font-size: 2.5rem;
+   font-weight: 600;
+}
+.card-text{
+   font-size: 1.4rem;
+}
+.text-muted{
+   font-size: 1.2rem;
+}

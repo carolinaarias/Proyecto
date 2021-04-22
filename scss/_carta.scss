@@ -1,0 +1,72 @@
+/*-----CARTA-----*/
+.menu{
+   background-color: white;
+}
+.carta{
+   padding-top: 100px;
+   margin-left: 3.2rem;
+}
+.carta h2{
+   margin-top: 1.6rem;
+   font-size: 2.7rem;
+   text-align: center;
+}
+.carta__products{
+   margin-top: 1.6rem;
+   width: 100%;
+}
+.carta__products li h3{
+   font-size: 2.4rem;
+}
+.carta__products-info{
+   justify-content: space-evenly;
+   align-items: center;
+   text-align: center;
+}
+.carta__products-info li{
+   margin: 3.2rem 0;
+   max-width: 22%;
+   padding: 3.2rem;
+   background-color: rgb(233, 232, 232);
+   border-radius: 1.6rem;
+   text-align: center;
+   overflow: hidden;
+}
+.carta__products-info li:hover{
+   box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.2);;
+}
+.carta__products-info li img{
+   width: 100%;
+   margin-bottom: 1.6rem;
+}
+.carta__products-info li h4{
+   margin-bottom: 1.6rem;
+   font-size: 1.9rem;
+}
+
+/*--delivery--*/
+.delivery{
+   margin-top: 3.2rem;
+   background-color: rgba(56, 56, 56, 0.945);
+   color: white;
+   text-align: center;
+}
+.delivery h3{
+   padding-top: 1.6rem;
+   font-size: 2.4rem;
+}
+.delivery__info{
+   justify-content: space-evenly;
+   align-items: center;
+   
+}
+.delivery__info li{
+   width: 25%;
+   text-align: center;
+   margin-top: 3.2rem;
+   margin-bottom: 1.6rem;
+}
+.delivery__info li img{
+   width: 5vw;
+   margin-top: 1.6rem;
+}
