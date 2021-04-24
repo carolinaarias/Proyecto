@@ -10,7 +10,6 @@
    padding-top: 10rem;
    padding-left: 3rem;
    padding-right: 3rem;
-   height: 100vh;
 
 }
 .product h2{
@@ -46,6 +45,12 @@
 .product__info-img  img:hover{
    transform: scale(1.2);
 }
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) { 
+   .product__info-img  img {
+      width: 100px;
+   }
+ }
 /*--presentations--*/
 .presentations{
    height: 30vh;
@@ -67,7 +72,6 @@
 }
 /*--alquiler choperas--*/
 .rental{
-   height: 80vh;
    padding-top: 5rem;
 }
 .rental .container{

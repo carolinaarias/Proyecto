@@ -6,7 +6,7 @@
 
 .staff__description{
    background-color: black;
-   height: 120vh;
+
 
 }
 .staff__description .container{
@@ -18,7 +18,6 @@
    color: white;
    font-size: 2rem;
    width: 40%;
-   height: 40vh;
    justify-content: center;
 }
 .staff__description-text h2{
@@ -31,8 +30,11 @@
 .staff__description-media img{
    width: 45%;
 }
-.staff__media{
-   height: 85vh;
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) { 
+   .staff__description-media img{
+      width: 200px;
+   }
 }
 
 .staff__media video{
@@ -48,7 +50,6 @@
 }
 
 .partners{
-   height: 100vh;
    background-image: url("../img/staff/madera-edit.jpg");
    background-size: contain;
    color: white;
