@@ -43,77 +43,83 @@
        </nav>
    </header>
    <section class="carta" >
-      <h2>Menu</h2>
-      <ul class="carta__products">
-         <li>
-            <h3>Pizzas</h3>
-            <ul class="flex-row carta__products-info">
-               <li>
-                  <h4>Muzzarella</h4>
-                  <p>$$</p>
-                  <img src="../img/comida/Muzza .png" alt="foto pizza">
-                  <p>Descripcion lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora delectus, nulla nemo labore eveniet inventore</p>
+      <div class=" carta__bar container-fluid fixed flex-row ">
+         <div>
+            <a class="navbar-brand" href="#">CARTA</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+         </div>
+         <nav class="navbar navbar-expand-lg  ">
+            <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+               <li class="nav-item ">
+                  <a class="nav-link" href="#pizzas">PIZZAS </a>
                </li>
-               <li>
-                  <h4>Roquefort</h4>
-                  <p>$$</p>
-                  <img src="../img/comida/Roque (1).png" alt="foto pizza">
-                  <p>Descripcion lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora delectus, nulla nemo labore eveniet inventore</p>
+               <li class="nav-item">
+                  <a class="nav-link" href="#sanguches">SANGUCHES</a>
                </li>
-               <li>
-                  <h4>Rucula</h4>
-                  <p>$$</p>
-                  <img src="../img/comida/Rucula (1).png" alt="foto pizza">
-                  <p>Descripcion lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora delectus, nulla nemo labore eveniet inventore</p>
+               <li class="nav-item">
+                  <a class="nav-link" href="#">HAMBURGUESAS</a>
                </li>
-            </ul>
-         </li>
-         <li>
-            <h3>Sanguches</h3>
-            <ul class="flex-row carta__products-info">
-               <li>
-                  <h4>Bondiola</h4>
-                  <p>$$</p>
-                  <img src="../img/comida/Sw-Bondio.png" alt="foto sanguche">
-                   <p>Descripcion lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora delectus, nulla nemo labore eveniet inventore</p>
-               </li>
-               <li>
-                  <h4>Coleslow</h4>
-                  <p>$$</p>
-                  <img src="../img/comida/Sw-Coleslow.png" alt="foto sanguche">
-                   <p>Descripcion lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora delectus, nulla nemo labore eveniet inventore</p>
-               </li>
-               <li>
-                  <h4>Jamon Crudo</h4>
-                  <p>$$</p>
-                  <img src="../img/comida/Sw-Crudo.png" alt="foto sanguche">
-                   <p>Descripcion lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora delectus, nulla nemo labore eveniet inventore</p>
+               <li class="nav-item">
+                  <a class="nav-link" href="https://menu.fu.do/holandeserrante">DELIVERY</a>
                </li>
             </ul>
-         </li>
-      </ul>
+            </div>
+         </nav>
+      </div>
+         <div class="carta__products container">
+            <ul>
+               <li>
+                  <h3 id="pizzas">PIZZAS</h3>
+                  <ul class="flex-row carta__products-info">
+                     <li class="col-4">
+                        <h4>MUZZARELLA</h4>
+                        <p>$$</p>
+                        <img src="../img/comida/Muzza .png" alt="foto pizza">
+                        <p>Descripcion lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora delectus, nulla nemo labore eveniet inventore</p>
+                     </li>
+                     <li class="col-4">
+                        <h4>ROQUEFORT</h4>
+                        <p>$$</p>
+                        <img src="../img/comida/Roque (1).png" alt="foto pizza">
+                        <p>Descripcion lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora delectus, nulla nemo labore eveniet inventore</p>
+                     </li>
+                     <li class="col-4">
+                        <h4>RUCULA</h4>
+                        <p>$$</p>
+                        <img src="../img/comida/Rucula (1).png" alt="foto pizza">
+                        <p>Descripcion lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora delectus, nulla nemo labore eveniet inventore</p>
+                     </li>
+                  </ul>
+               </li>
+               <li>
+                  <h3 id="sanguches">SANGUCHES</h3>
+                  <ul class="flex-row carta__products-info">
+                     <li class="col-4">
+                        <h4>BONDIOLA</h4>
+                        <p>$$</p>
+                        <img src="../img/comida/Sw-Bondio.png" alt="foto sanguche">
+                        <p>Descripcion lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora delectus, nulla nemo labore eveniet inventore</p>
+                     </li>
+                     <li class="col-4">
+                        <h4>COLESLOW</h4>
+                        <p>$$</p>
+                        <img src="../img/comida/Sw-Coleslow.png" alt="foto sanguche">
+                        <p>Descripcion lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora delectus, nulla nemo labore eveniet inventore</p>
+                     </li>
+                     <li class="col-4">
+                        <h4>JAMON CRUDO</h4>
+                        <p>$$</p>
+                        <img src="../img/comida/Sw-Crudo.png" alt="foto sanguche">
+                        <p>Descripcion lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora delectus, nulla nemo labore eveniet inventore</p>
+                     </li>
+                  </ul>
+               </li>
+            </ul>
    </section>
-   <section class="delivery">
-      <h3>Te lo llevamos a tu casa!</h3>
-      <ol class="delivery__info flex-row">
-         <li>
-            <p>Entrá a nuestro Instagram y fijate el menú</p>
-            <a href="https://www.instagram.com/holandeserrantebar/?hl=es-la" target="blank">
-               <img src="../multimedia/icons/instagram.svg" alt="icono de instagram">
-            </a> 
-         </li>
-         <li>
-            <p>Hacé tu pedido por whatsapp</p>
-            <a href="https://l.instagram.com/?u=https%3A%2F%2Fbit.ly%2FRealizarMiiPedido&e=ATNqcZMa4uO4n72hgneqXSDGOPy13E9q4IjidEAOdZVsF36pYsCKGHq5sUK_vB1xCZEYby9PgcKJ2T4IgEhU9A&s=1" target="blank">
-               <img src="../multimedia/icons/whatsapp.svg" alt="icono de whatsapp">
-            </a> 
-         </li>
-         <li>
-            <p>Ya está llegando!</p>
-            <img src="../multimedia/icons/delivery-man.svg" alt="icono delivery-man">
-         </li>
-      </ol>
-   </section>
+   
    <footer class="flex-row container-fluid p-2">
       <div class="footer_info col-12 col-md-4">
          <h4>Villa Urquiza</h4>

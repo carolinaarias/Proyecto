@@ -32,7 +32,7 @@
    width: 45%;
 }
 .staff__media{
-   height: 100vh;
+   height: 85vh;
 }
 
 .staff__media video{
@@ -47,3 +47,23 @@
    font-size: 2rem;
 }
 
+.partners{
+   height: 100vh;
+   background-image: url("../img/staff/madera-edit.jpg");
+   background-size: contain;
+   color: white;
+   font-size: 1.4rem
+}
+.partners .container h2{
+   @include titles;
+   
+}
+.partners__logos{
+   justify-content: space-evenly;
+   align-items: center;
+   
+}
+.partners__logos img{
+   width: 50%;
+   border-radius: 3rem;
+}

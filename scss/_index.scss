@@ -18,17 +18,39 @@ main{
 }
 /*--reviews--*/
 .reviews{
-   height: 100vh;
+   height: 40vh;
 }
 .reviews div h2{
-  @include titles
+  @include titles;
+  margin-bottom: 4rem;
 }
-.reviews__fb{
-   background-color: rgba(65, 65, 65, 0.452);
-   padding: 3.2rem;
-   border-radius: 2%;
-   right: 10vw;
-   margin-top: 10vh;
+.reviews .container{
+   padding-top: 3rem;
+}
+.reviews__comments{
+   justify-content: space-evenly;
+   align-content: center;
+   background-image: url(../img/staff/madera-edit.jpg);
+   background-size:cover;
+   height: 30vh;
+   padding: 2rem;
+   position: relative;
+   bottom: 0rem;
+}
+.reviews__comments div{
+   color: white;
+   height: 60%;
+   background-color: rgba(0, 0, 0, 0.37);
+
+}
+.reviews__comments div {
+   h3{
+      font-size: 2.5rem;
+      font-weight: 700;
+   }
+   p{
+      font-size: 1.5rem;
+   }
 }
 /*--news--*/
 .news{
@@ -36,13 +58,12 @@ main{
    color: white;
 }
 .news .container{
-   padding-top: 10.6rem;
+   padding-top: 20rem;
 }
 .news div h2{
    @include titles
 }
 .card{
-   width: 10%;
    color: black;
    overflow: hidden;
    border-radius: 1rem;
