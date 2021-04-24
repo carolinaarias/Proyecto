@@ -5,9 +5,8 @@
 }
 
 .staff__description{
+   height: 120vh;
    background-color: black;
-
-
 }
 .staff__description .container{
    justify-content: space-between;
@@ -50,6 +49,7 @@
 }
 
 .partners{
+   height: 100vh;
    background-image: url("../img/staff/madera-edit.jpg");
    background-size: contain;
    color: white;

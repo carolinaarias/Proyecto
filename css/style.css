@@ -17,30 +17,25 @@ main {
   height: 25px; }
 
 /*--reviews--*/
-.reviews {
-  height: 40vh; }
-
 .reviews div h2 {
   font-size: 3rem;
   font-weight: 800;
-  margin-bottom: 4rem; }
+  margin-bottom: 3rem; }
 
 .reviews .container {
-  padding-top: 3rem; }
+  padding-top: 1rem; }
 
 .reviews__comments {
   justify-content: space-evenly;
   align-content: center;
   background-image: url(../img/staff/madera-edit.jpg);
   background-size: cover;
-  height: 30vh;
   padding: 2rem;
   position: relative;
-  bottom: 0rem; }
+  bottom: -3rem; }
 
 .reviews__comments div {
   color: white;
-  height: 60%;
   background-color: rgba(0, 0, 0, 0.37); }
 
 .reviews__comments div h3 {
@@ -49,6 +44,10 @@ main {
 
 .reviews__comments div p {
   font-size: 1.5rem; }
+
+@media (max-width: 991.98px) {
+  .reviews__comments div {
+    margin-bottom: 1rem; } }
 
 /*--news--*/
 .news {
@@ -71,7 +70,6 @@ main {
   box-shadow: 0 5px 5px 5px #686868; }
 
 .card-body {
-  height: 50%;
   font-family: 'Source Sans Pro', sans-serif; }
 
 .card-img-top {
@@ -94,8 +92,8 @@ main {
   background-color: white; }
 
 .staff__description {
-  background-color: black;
-  height: 120vh; }
+  height: 120vh;
+  background-color: black; }
 
 .staff__description .container {
   justify-content: space-between;
@@ -106,7 +104,6 @@ main {
   color: white;
   font-size: 2rem;
   width: 40%;
-  height: 40vh;
   justify-content: center; }
 
 .staff__description-text h2 {
@@ -119,8 +116,9 @@ main {
 .staff__description-media img {
   width: 45%; }
 
-.staff__media {
-  height: 85vh; }
+@media (max-width: 991.98px) {
+  .staff__description-media img {
+    width: 200px; } }
 
 .staff__media video {
   width: 100%;
@@ -160,8 +158,7 @@ main {
   background-image: url(../img/staff/madera-edit.jpg);
   padding-top: 10rem;
   padding-left: 3rem;
-  padding-right: 3rem;
-  height: 100vh; }
+  padding-right: 3rem; }
 
 .product h2 {
   color: white;
@@ -196,6 +193,10 @@ main {
 .product__info-img img:hover {
   transform: scale(1.2); }
 
+@media (max-width: 991.98px) {
+  .product__info-img img {
+    width: 100px; } }
+
 /*--presentations--*/
 .presentations {
   height: 30vh;
@@ -217,7 +218,6 @@ main {
 
 /*--alquiler choperas--*/
 .rental {
-  height: 80vh;
   padding-top: 5rem; }
 
 .rental .container {
@@ -264,7 +264,7 @@ main {
 
 .carta__products {
   padding-top: 15vh;
-  width: 100%; }
+  height: fit-content; }
 
 .carta__products li h3 {
   font-size: 2.5rem;
@@ -301,7 +301,7 @@ main {
 
 /*-----ENCONTRANOS-----*/
 .encontranos {
-  height: 100vh;
+  height: fit-content;
   padding-top: 130px; }
 
 .encontranos__info {

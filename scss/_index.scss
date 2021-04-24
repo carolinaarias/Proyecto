@@ -20,10 +20,10 @@ main{
 
 .reviews div h2{
   @include titles;
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
 }
 .reviews .container{
-   padding-top: 3rem;
+   padding-top: 1rem;
 }
 .reviews__comments{
    justify-content: space-evenly;
@@ -31,6 +31,8 @@ main{
    background-image: url(../img/staff/madera-edit.jpg);
    background-size:cover;
    padding: 2rem;
+   position: relative;
+   bottom: -3rem;
 }
 .reviews__comments div{
    color: white;
