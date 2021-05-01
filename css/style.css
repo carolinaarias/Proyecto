@@ -25,29 +25,28 @@ main {
 .reviews .container {
   padding-top: 1rem; }
 
-.reviews__comments {
+.reviews__container {
   justify-content: space-evenly;
   align-content: center;
   background-image: url(../img/staff/madera-edit.jpg);
   background-size: cover;
   padding: 2rem;
   position: relative;
-  bottom: -3rem; }
+  bottom: -4.5rem;
+  border-radius: 1.5rem; }
 
-.reviews__comments div {
+.reviews .container .reviews__comments {
   color: white;
-  background-color: rgba(0, 0, 0, 0.37); }
+  background-color: rgba(0, 0, 0, 0.37);
+  border-radius: 2rem;
+  padding: 1.5rem; }
 
-.reviews__comments div h3 {
+.reviews__comments h3 {
   font-size: 2.5rem;
   font-weight: 700; }
 
-.reviews__comments div p {
+.reviews__comments p {
   font-size: 1.5rem; }
-
-@media (max-width: 991.98px) {
-  .reviews__comments div {
-    margin-bottom: 1rem; } }
 
 /*--news--*/
 .news {
@@ -55,37 +54,53 @@ main {
   color: white; }
 
 .news .container {
-  padding-top: 20rem; }
+  padding-top: 20rem;
+  padding-bottom: 10rem; }
 
 .news div h2 {
   font-size: 3rem;
   font-weight: 800; }
 
 .card {
+  background-color: rgba(255, 255, 255, 0.897);
   color: black;
-  overflow: hidden;
-  border-radius: 1rem; }
+  border-radius: 1rem;
+  width: 75%;
+  opacity: 85%;
+  cursor: pointer;
+  transition: all 0.1s; }
 
 .card:hover {
-  box-shadow: 0 5px 5px 5px #686868; }
+  opacity: 100%;
+  transform: scale(1.1); }
 
-.card-body {
-  font-family: 'Source Sans Pro', sans-serif; }
+.card__img {
+  text-align: center;
+  padding-top: 1rem;
+  border-radius: 2rem; }
+  .card__img img {
+    width: 90%;
+    border-radius: 1.5rem; }
 
-.card-img-top {
-  height: 50%;
-  padding: 1.6rem;
-  border-radius: 3rem; }
-
-.card-title {
-  font-size: 2.5rem;
-  font-weight: 600; }
-
-.card-text {
+.card__text {
+  padding: 2rem;
+  padding-left: 2.5rem;
   font-size: 1.4rem; }
 
-.text-muted {
-  font-size: 1.2rem; }
+.card__text h4 {
+  font-size: 2.2rem;
+  font-weight: 600; }
+
+@media (max-width: 991.98px) {
+  .reviews__comments {
+    margin-bottom: 1rem; }
+  .card {
+    margin-top: 2rem; } }
+
+@media (max-width: 767.98px) {
+  .card__img img {
+    width: 80%;
+    border-radius: 1.5rem; } }
 
 /*-----NOSOTROS-----*/
 .nosotros {
@@ -114,21 +129,24 @@ main {
   justify-content: space-around; }
 
 .staff__description-media img {
-  width: 45%; }
-
-@media (max-width: 991.98px) {
-  .staff__description-media img {
-    width: 200px; } }
+  width: 45%;
+  border-radius: 2rem; }
 
 .staff__media video {
   width: 100%;
   position: relative;
   top: -7rem;
-  box-shadow: -4px -13px 22px -5px rgba(230, 230, 230, 0.7); }
+  box-shadow: -4px -13px 22px -5px rgba(230, 230, 230, 0.637); }
 
 .staff__media-text {
-  padding-top: 2rem;
-  font-size: 2rem; }
+  padding-top: 3rem;
+  font-size: 2.5rem;
+  font-weight: 800; }
+
+.staff__media-text-span {
+  color: #70ce70;
+  font-size: 4rem;
+  line-height: 4rem; }
 
 .partners {
   height: 100vh;
@@ -149,6 +167,27 @@ main {
   width: 50%;
   border-radius: 3rem; }
 
+@media (max-width: 991.98px) {
+  .staff__description {
+    height: 170vh; }
+  .staff__description-media img {
+    margin-top: 2rem;
+    margin-bottom: 2rem; }
+  .staff__media-text {
+    padding-top: 0;
+    margin-bottom: 10rem; }
+  .partners {
+    background-image: url(../img/staff/madera-edit-media.jpg);
+    background-size: cover; }
+  .partners__logos img {
+    margin-bottom: 2rem; } }
+
+@media (max-width: 452px) {
+  .staff__description {
+    height: 120vh; }
+  .partners__logos img {
+    width: 100%; } }
+
 /*-----CERVEZAS-----*/
 .cervezas {
   background-color: white; }
@@ -156,9 +195,9 @@ main {
 /*--product--*/
 .product .container-fluid {
   background-image: url(../img/staff/madera-edit.jpg);
-  padding-top: 10rem;
-  padding-left: 3rem;
-  padding-right: 3rem; }
+  padding: 10rem;
+  padding-top: 12rem;
+  padding-bottom: 20rem; }
 
 .product h2 {
   color: white;
@@ -167,40 +206,52 @@ main {
   font-weight: 800; }
 
 .product__info-imgselect {
+  width: 100%;
   color: white;
   background-color: rgba(0, 0, 0, 0.493);
-  padding: 2.5rem;
+  padding: 2rem;
   border-radius: 1rem; }
 
 .product__info-imgselect h3 {
+  font-size: 2.8rem;
+  font-weight: 800; }
+
+.product__info-imgselect h4 {
   font-size: 2.5rem; }
 
-.product__info-imgselect p {
-  font-size: 1.5rem; }
-
 .product__info-imgselect img {
-  width: 65%;
+  width: 100%;
   border-radius: 2rem; }
 
-.product__info-img {
-  justify-content: space-evenly;
-  align-items: center; }
+.product__info-imgselect span {
+  margin-top: 4rem;
+  font-size: 1.5rem; }
 
-.product__info-img img {
-  width: 40%;
-  transition: all 2s; }
+.product__info-imgselect-icons {
+  margin-top: 3rem; }
+  .product__info-imgselect-icons img {
+    width: 8%;
+    margin-left: 1rem; }
+
+.product__info-img {
+  justify-content: center;
+  align-items: center; }
+  .product__info-img img {
+    width: 30%;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-left: 2rem; }
 
 .product__info-img img:hover {
   transform: scale(1.2); }
 
-@media (max-width: 991.98px) {
-  .product__info-img img {
-    width: 100px; } }
-
-/*--presentations--*/
+/*--PRESENTATIONS--*/
 .presentations {
-  height: 30vh;
-  background-color: rgba(0, 0, 0, 0.877); }
+  margin-left: 8rem;
+  margin-right: 8rem;
+  background-color: rgba(0, 0, 0, 0.959);
+  position: relative;
+  top: -6rem; }
 
 .presentations h2 {
   color: white;
@@ -212,13 +263,14 @@ main {
 .presentations__icons {
   justify-content: space-around;
   align-items: center; }
-
-.presentations__icons img {
-  width: 80px; }
+  .presentations__icons img {
+    width: 8%;
+    padding-bottom: 3rem; }
 
 /*--alquiler choperas--*/
 .rental {
-  padding-top: 5rem; }
+  padding-top: 4rem;
+  padding-bottom: 5rem; }
 
 .rental .container {
   justify-content: space-between;
@@ -239,6 +291,60 @@ main {
 
 .rental__img img {
   width: 400px; }
+
+@media (max-width: 991.98px) {
+  .product__info-img {
+    margin-top: 3rem; }
+    .product__info-img img {
+      width: 15%;
+      margin-top: 1rem; }
+  .rental__img {
+    padding: 0 !important; }
+    .rental__img img {
+      width: 70%;
+      margin-bottom: 2rem; } }
+
+@media (max-width: 767.98px) {
+  .product .container-fluid {
+    background-image: url(../img/staff/madera-edit-media.jpg); }
+  .product__info-imgselect {
+    display: flex;
+    flex-direction: column; }
+    .product__info-imgselect .product__info-imgselect-img {
+      text-align: center; }
+    .product__info-imgselect img {
+      width: 70%; }
+    .product__info-imgselect h3 {
+      margin-top: 2rem; }
+  .product__info-imgselect-icons {
+    margin-top: 1rem; }
+    .product__info-imgselect-icons img {
+      width: 8%; }
+  .product__info-img img {
+    width: 25%; }
+  .presentations {
+    margin-left: 4rem;
+    margin-right: 4rem; }
+    .presentations .presentations__icons img {
+      width: 15%; } }
+
+@media (max-width: 575.98px) {
+  .product .container-fluid {
+    padding: 5rem;
+    padding-top: 12rem; }
+  .product__info-imgselect-icons {
+    margin-top: 1rem; }
+    .product__info-imgselect-icons img {
+      width: 12%; }
+  .product__info-img {
+    padding-bottom: 5rem; }
+  .presentations {
+    margin-left: 2rem;
+    margin-right: 2rem; }
+    .presentations .presentations__icons img {
+      width: 18%; }
+  .rental__img img {
+    width: 90%; } }
 
 /*-----CARTA-----*/
 .menu {
@@ -263,33 +369,32 @@ main {
   font-size: 1.8rem; }
 
 .carta__products {
-  padding-top: 15vh;
-  height: fit-content; }
-
-.carta__products li h3 {
-  font-size: 2.5rem;
-  font-weight: 700; }
+  padding-top: 15vh; }
+  .carta__products li {
+    margin-bottom: 3rem; }
+    .carta__products li h3 {
+      margin-bottom: 2rem;
+      font-size: 2.8rem;
+      font-weight: 700; }
 
 .carta__products-info {
   justify-content: space-evenly;
-  align-items: center;
-  text-align: center; }
+  align-items: center; }
+  .carta__products-info li .carta__products-info-div {
+    padding: 3.2rem;
+    background-color: #e9e8e8;
+    border-radius: 1.6rem; }
+    .carta__products-info li .carta__products-info-div h4 {
+      font-size: 2.2rem;
+      font-weight: 500; }
+    .carta__products-info li .carta__products-info-div span {
+      font-size: 1.8rem; }
+  .carta__products-info li img {
+    width: 100%;
+    margin-bottom: 1.6rem; }
 
-.carta__products-info li {
-  margin: 3.2rem 0;
-  max-width: 30%;
-  padding: 3.2rem;
-  background-color: #e9e8e8;
-  border-radius: 1.6rem;
-  text-align: center;
-  overflow: hidden; }
-
-.carta__products-info li:hover {
+.carta__products-info-div:hover {
   box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.2); }
-
-.carta__products-info li img {
-  width: 100%;
-  margin-bottom: 1.6rem; }
 
 .carta__products-info li h4 {
   margin-bottom: 1.6rem;
@@ -298,6 +403,10 @@ main {
 
 .carta__products-info li P {
   font-size: 1.5rem; }
+
+@media (max-width: 767.98px) {
+  .carta__products-info-div img {
+    width: 85%; } }
 
 /*-----ENCONTRANOS-----*/
 .encontranos {
@@ -315,16 +424,17 @@ main {
   font-size: 3rem;
   font-weight: 800; }
 
-.info h3 {
-  font-size: 2.5rem;
-  font-weight: 500; }
-
-.info p {
-  font-size: 1.5rem; }
+.info {
+  margin-bottom: 8rem; }
+  .info h3 {
+    font-size: 2.5rem;
+    font-weight: 600; }
+  .info p {
+    font-size: 1.5rem; }
 
 .form h3 {
   font-size: 2.5rem;
-  font-weight: 500; }
+  font-weight: 600; }
 
 .form label {
   font-size: 1.5rem; }
@@ -334,6 +444,23 @@ main {
   width: 25%;
   background-color: #70ce70;
   border-color: #417a41; }
+
+.form button:hover {
+  border-color: #70ce70;
+  background-color: #417a41; }
+
+iframe {
+  width: 100%;
+  height: 55vh; }
+
+@media (max-width: 991.98px) {
+  iframe {
+    max-width: 80vw !important; } }
+
+@media (max-width: 767.98px) {
+  .info {
+    margin-top: 3rem;
+    margin-bottom: 3rem; } }
 
 :root {
   font-size: 10px; }
@@ -369,7 +496,7 @@ ul, ol {
 header {
   background-color: rgba(27, 27, 27, 0.945);
   box-shadow: 2px 2px 2px 3px rgba(0, 0, 0, 0.2);
-  z-index: 2;
+  z-index: 10;
   justify-content: space-between;
   align-items: center; }
 
@@ -411,6 +538,13 @@ footer {
   font-weight: 400;
   padding: 1rem; }
 
+footer .footer_info a {
+  color: white; }
+
+footer .footer_info a:hover {
+  text-decoration: none;
+  color: #70ce70; }
+
 .footer_info h4 {
   font-size: 1.6rem;
   font-weight: 700;
@@ -438,7 +572,7 @@ footer ul {
 .footer__img {
   width: 2.5rem;
   opacity: 80%;
-  transition: all 1s; }
+  transition: all 0.3s; }
 
 .footer__img:hover {
   transform: scale(1.3);
