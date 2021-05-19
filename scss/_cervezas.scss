@@ -57,7 +57,6 @@
    align-items: center;
    img{
       width: 30%;
-      cursor: pointer;
       transition: all 0.3s;
       margin-left: 2rem;
    }
@@ -72,7 +71,8 @@
 .presentations{
    margin-left: 8rem;
    margin-right: 8rem;
-   background-color:rgba(0, 0, 0, 0.959);
+   background-color:rgba(0, 0, 0, 0.938);
+   border-radius: 2rem;
    position: relative;
    top: -6rem;
 }
@@ -86,7 +86,7 @@
    justify-content: space-around;
    align-items: center;
    img {
-      width: 8%;
+      width: 7%;
       padding-bottom: 3rem;
       
    }
@@ -107,8 +107,9 @@
 .rental__info h2{
    @include titles;
 }
-.rental__info p{
+.rental__info{
    font-size: 1.5rem;
+
 }
 .rental__img {
    width: 50%;
@@ -116,6 +117,7 @@
 }
 .rental__img img{
    width: 400px;
+   border-radius:3rem;
 
 }
 
